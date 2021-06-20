@@ -1,0 +1,260 @@
+a:hover {
+  text-decoration: none;
+}
+body{
+  background-color: #eee;
+}
+/* header  */
+.header {
+  background-color: #fff;
+  z-index: 100;
+}
+.header .top-header ul li a {
+  font-weight: bold;
+  color: #7f7f7f;
+}
+.header .top-header ul li a .fa {
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.header .top-header ul li:nth-child(3) a .fa:hover {
+  color: #3b5999;
+  transform: scale(1.5);
+}
+.header .top-header ul li:nth-child(4) a .fa:hover {
+  color: #55acee;
+  transform: scale(1.5);
+}
+.header .top-header ul li:nth-child(5) a .fa:hover {
+  color: #0077b5;
+  transform: scale(1.5);
+}
+.header .top-header ul li:nth-child(6) a .fa:hover {
+  color: #25d366;
+  transform: scale(1.5);
+}
+.header .top-header ul li:nth-child(7) a .fa:hover {
+  color: #e4405f;
+  transform: scale(1.5);
+}
+.header .navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+}
+.header .navbar .navbar-nav .nav-item .nav-link {
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+.header .navbar .navbar-nav .nav-item.active .nav-link,
+.header .navbar .navbar-nav .nav-item:hover .nav-link {
+  color: #007bff;
+}
+
+/* end header  */
+/* ************************************************* */
+/* landing  */
+.landing {
+  padding: 200px 0 50px;
+}
+.landing h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+.landing p{
+  color: #728191;
+  letter-spacing: 4px;
+  line-height: 3;
+}
+.landing h2 span {
+  color: #007bff;
+}
+
+/* end landing  */
+/* ************************************************* */
+
+/* learn  */
+.learn {
+  padding: 50px 0;
+}
+.learn h3 {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 35px;
+}
+.learn .card {
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  transition: 0.3s ease;
+}
+.learn .card:hover {
+  transform: translateY(-4px);
+}
+.learn .card1 {
+  background-color: #377dff;
+}
+.learn .card2 {
+  background-color: #2d1582;
+}
+.learn .card3 {
+  background-color: #f5ca99;
+}
+.learn .card .card-title {
+  font-size: 25px;
+}
+.learn .card-footer {
+  background-color: transparent;
+  border: none;
+}
+.learn .card-footer a {
+  color: #fff;
+}
+
+/* end learn  */
+/* ************************************************* */
+/* gallery  */
+.gallery {
+  padding: 50px 0;
+}
+.gallery .row {
+  position: relative;
+}
+.gallery .gallery-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.gallery .gallery-disc {
+  color: #728191;
+}
+.gallery .sections ul {
+  position: sticky;
+  top: 0;
+}
+.gallery .sections ul li{
+  cursor: pointer;
+}
+
+.gallery .imgs .row div:hover{
+  transform: scale(.96);
+}
+
+
+.gallery .imgs .row div.show{
+  display: block;
+  animation: show 0.5s ease-in-out;
+}
+.gallery .imgs .row div.hide{
+  display: none;
+}
+.gallery .sections li > span {
+  color: #6c7c8c;
+}
+.gallery img {
+  height: 100%;
+}
+@keyframes show{
+  0%{
+    opacity: .3;
+    transform: scale(.8);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* end gallery  */
+/* ************************************************* */
+/* price  */
+.price {
+  padding: 50px 0;
+  background-image: url(../imgs/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.price .overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.3);
+}
+.price .container{
+  z-index: 200;
+}
+.price h5{
+  font-size:16px ;
+  font-weight: 600;
+}
+.price h6{
+  font-size:14px ;
+  font-weight: 100;
+}
+.price p{
+  font-size: 16px;
+  color: #ddd;
+  padding: 10px 20px;
+}
+
+/* end price  */
+/* ************************************************* */
+.services p {
+  color: #7f7f7f;
+}
+/* footer  */
+.footer {
+  background-color: #21325b;
+}
+.footer h3{
+  font-size: 20px;
+  font-weight:600 ;
+}
+.footer .brand {
+  font-size: 30px;
+  font-weight: 600;
+}
+.footer a {
+  color: #fff;
+  opacity: 0.7;
+}
+.footer a:hover {
+  opacity: 1;
+  animation:  timing-function delay iteration-count direction fill-mode;
+}
+.footer .fa{
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.footer  .fa:nth-child(1):hover {
+  color: #3b5999;
+}
+.footer  .fa:nth-child(2):hover {
+  color: #55acee;
+}
+.footer  .fa:nth-child(3):hover {
+  color: #0077b5;
+}
+.footer  .fa:nth-child(4):hover {
+  color: #25d366;
+}
+.footer  .fa:nth-child(5):hover {
+  color: rgb(184, 40, 40);
+}
+.footer h5{
+  font-size: 13px;
+  color: #728191;
+}
+.footer .disc{
+  font-size: 13px;
+  padding: 15px 150px;
+  color: #728191;
+}
+
+@media (max-width :1100px)
+{
+  .footer .disc{
+    padding: 15px ;
+  }
+}
+/* end footer  */
+/* ************************************************* */
